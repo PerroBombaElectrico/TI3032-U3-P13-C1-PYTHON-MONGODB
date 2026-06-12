@@ -16,6 +16,7 @@ except:
     print("❌ ERROR EN LA CONEXIÓN")
     exit(code=1)
 
+<<<<<<< HEAD
 TI3032_U3_EF = client["TI3032_U3_EF"]  # Elijo la base de datos
 
 coleccion_clientes = TI3032_U3_EF["clientes"]  # Seleccion coleccion Clientes
@@ -24,6 +25,14 @@ coleccion_pedidos = TI3032_U3_EF["pedidos"]  # Seleccion coleccion Pedidos
 
 def insercion_inicial_coleccion_clientes() -> None:
   
+=======
+TI3032_U3_EF = client["TI3032_U3_EF"] # Elijo la base de datos
+
+coleccion_clientes = TI3032_U3_EF["clientes"] # Seleccion coleccion Clientes
+coleccion_pedidos = TI3032_U3_EF["pedidos"] # Seleccion coleccion Pedidos
+
+def insercion_inicial_coleccion_clientes() -> None:
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
     respuesta = coleccion_clientes.insert_many(
         [
             {
@@ -32,7 +41,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "laura.martinez@gmail.com",
                 "fecha_registro": "2026-01-15T10:30:00Z",
                 "direccion": "Av. Providencia 1234, Santiago",
+<<<<<<< HEAD
                 "telefono": "+56 9 8123 4567",
+=======
+                "telefono": "+56 9 8123 4567"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 2,
@@ -40,7 +53,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "carlos.rojas@hotmail.com",
                 "fecha_registro": "2025-09-22T14:10:00Z",
                 "direccion": "Calle Los Aromos 456, Valparaíso",
+<<<<<<< HEAD
                 "telefono": "+56 9 7234 5678",
+=======
+                "telefono": "+56 9 7234 5678"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 3,
@@ -48,7 +65,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "fernanda.silva@gmail.com",
                 "fecha_registro": "2024-03-05T09:45:00Z",
                 "direccion": "Pasaje Las Rosas 789, Concepción",
+<<<<<<< HEAD
                 "telefono": "+56 9 6345 6789",
+=======
+                "telefono": "+56 9 6345 6789"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 4,
@@ -56,7 +77,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "javier.torres@outlook.com",
                 "fecha_registro": "2026-04-18T16:20:00Z",
                 "direccion": "Av. Alemania 321, Temuco",
+<<<<<<< HEAD
                 "telefono": "+56 9 5456 7890",
+=======
+                "telefono": "+56 9 5456 7890"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 5,
@@ -64,7 +89,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "camila.soto@gmail.com",
                 "fecha_registro": "2025-12-02T11:00:00Z",
                 "direccion": "Calle San Martín 654, La Serena",
+<<<<<<< HEAD
                 "telefono": "+56 9 4567 8901",
+=======
+                "telefono": "+56 9 4567 8901"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 6,
@@ -72,7 +101,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "matias.herrera@yahoo.com",
                 "fecha_registro": "2023-07-11T13:25:00Z",
                 "direccion": "Av. Brasil 987, Antofagasta",
+<<<<<<< HEAD
                 "telefono": "+56 9 3678 9012",
+=======
+                "telefono": "+56 9 3678 9012"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 7,
@@ -80,7 +113,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "valentina.fuentes@gmail.com",
                 "fecha_registro": "2026-02-28T08:15:00Z",
                 "direccion": "Camino El Alba 147, Rancagua",
+<<<<<<< HEAD
                 "telefono": "+56 9 2789 0123",
+=======
+                "telefono": "+56 9 2789 0123"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 8,
@@ -88,7 +125,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "diego.morales@empresa.cl",
                 "fecha_registro": "2022-10-09T17:40:00Z",
                 "direccion": "Calle Maipú 258, Talca",
+<<<<<<< HEAD
                 "telefono": "+56 9 1890 1234",
+=======
+                "telefono": "+56 9 1890 1234"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 9,
@@ -96,7 +137,11 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "paula.contreras@gmail.com",
                 "fecha_registro": "2025-06-20T12:05:00Z",
                 "direccion": "Av. Costanera 369, Puerto Montt",
+<<<<<<< HEAD
                 "telefono": "+56 9 9001 2345",
+=======
+                "telefono": "+56 9 9001 2345"
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
             },
             {
                 "_id": 10,
@@ -104,13 +149,19 @@ def insercion_inicial_coleccion_clientes() -> None:
                 "email": "andres.vega@icloud.com",
                 "fecha_registro": "2024-11-30T15:55:00Z",
                 "direccion": "Pasaje Los Pinos 741, Chillán",
+<<<<<<< HEAD
                 "telefono": "+56 9 8111 2222",
             },
+=======
+                "telefono": "+56 9 8111 2222"
+            }
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
         ]
     )
 
     print(respuesta)
 
+<<<<<<< HEAD
 
 def insercion_inicial_coleccion_pedidos() -> None:
     respuesta = coleccion_pedidos.insert_many(
@@ -239,3 +290,7 @@ for documento in documentos_clientes:
   for campo in documento:
     print(f"{campo}: {documento[campo]}")
     
+=======
+def insercion_inicial_coleccion_pedidos() -> None:
+    pass
+>>>>>>> 2effe147e49e3af1462f578dd8a02f19f3f60307
